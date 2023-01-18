@@ -8,14 +8,14 @@ package com.niit.bejp;
 
 public class Fibonacci {
 
-    static void Fibonacci(int N)
+    static int Fibonacci(int number)
     {
         int num1 = 0, num2 = 1;
 
         int counter = 0;
 
         // Iterate till counter is N
-        while (counter < N) {
+        while (counter < number) {
 
             // Print the number
             System.out.print(num1 + " ");
@@ -26,6 +26,7 @@ public class Fibonacci {
             num2 = num3;
             counter = counter + 1;
         }
+        return num1;
     }
     public static void main(String args[])
     {
